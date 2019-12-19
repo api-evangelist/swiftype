@@ -1,0 +1,82 @@
+{
+    "name": "Swiftype",
+    "description": "Swiftype is a cloud-based search platform that provides all the tools you need to create fantastic search experiences.",
+    "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/1173-swiftype.jpg",
+    "tags": [
+        "have api",
+        "locations",
+        "search",
+        "websites"
+    ],
+    "created": "2019-12-19",
+    "modified": "2019-12-19",
+    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/swiftype\/master\/apis.json",
+    "specificationVersion": "0.14",
+    "apis": [
+        {
+            "name": "Swiftype",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/1173-swiftype.jpg",
+            "humanURL": "http:\/\/swiftype.com\/",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/swiftype-postman-collection.json"
+                }
+            ]
+        }
+    ],
+    "include": [],
+    "x-common": [
+        {
+            "type": "Website",
+            "url": "http:\/\/swiftype.com\/"
+        },
+        {
+            "type": "Blog",
+            "url": "http:\/\/swiftype.com\/blog"
+        },
+        {
+            "type": "Crunchbase",
+            "url": "http:\/\/www.crunchbase.com\/company\/swiftype"
+        },
+        {
+            "type": "Crunchbase",
+            "url": "https:\/\/crunchbase.com\/organization\/swiftype"
+        },
+        {
+            "type": "Developers",
+            "url": "https:\/\/swiftype.com\/documentation"
+        },
+        {
+            "type": "Email",
+            "url": "support@swiftype.com"
+        },
+        {
+            "type": "Email",
+            "url": "security-questions@swiftype.com"
+        },
+        {
+            "type": "Email",
+            "url": "security@swiftype.com"
+        },
+        {
+            "type": "Email",
+            "url": "copyright@swiftype.com"
+        },
+        {
+            "type": "Github",
+            "url": "https:\/\/github.com\/swiftype"
+        },
+        {
+            "type": "Pricing",
+            "url": "https:\/\/swiftype.com\/pricing"
+        },
+        {
+            "type": "Twitter",
+            "url": "https:\/\/twitter.com\/#!\/swiftype"
+        }
+    ]
+}
