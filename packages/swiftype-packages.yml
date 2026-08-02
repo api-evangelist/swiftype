@@ -1,0 +1,68 @@
+generated: '2026-07-21'
+method: searched
+source: https://swiftype.com/documentation/site-search/overview
+notes: >-
+  Swiftype is now Elastic Site Search. The original "swiftype" client libraries
+  are published and first-party but explicitly deprecated in favor of the
+  Elastic-branded "elastic-site-search" / "@elastic/site-search-node" clients
+  under the github.com/elastic org. Both generations are captured here.
+packages:
+  # Current, Elastic-branded first-party clients
+  - language: php
+    registry: packagist
+    name: elastic/site-search-php
+    url: https://packagist.org/packages/elastic/site-search-php
+    repo: https://github.com/elastic/site-search-php
+    install: composer require elastic/site-search-php
+    official: true
+    status: current
+  - language: python
+    registry: pypi
+    name: elastic-site-search
+    url: https://pypi.org/project/elastic-site-search/
+    repo: https://github.com/elastic/site-search-python
+    install: pip install elastic-site-search
+    official: true
+    status: current
+  - language: javascript
+    registry: npm
+    name: "@elastic/site-search-node"
+    url: https://www.npmjs.com/package/@elastic/site-search-node
+    repo: https://github.com/elastic/site-search-node
+    install: npm install @elastic/site-search-node
+    official: true
+    status: current
+  - language: ruby
+    registry: rubygems
+    name: elastic-site-search
+    url: https://rubygems.org/gems/elastic-site-search
+    repo: https://github.com/elastic/site-search-ruby
+    install: gem install elastic-site-search
+    official: true
+    status: current
+  # Legacy, first-party but deprecated clients (kept for provenance)
+  - language: javascript
+    registry: npm
+    name: swiftype
+    url: https://www.npmjs.com/package/swiftype
+    repo: https://github.com/swiftype/swiftype-node
+    install: npm install swiftype
+    official: true
+    status: deprecated
+    deprecated_in_favor_of: "@elastic/site-search-node"
+  - language: python
+    registry: pypi
+    name: swiftype
+    url: https://pypi.org/project/swiftype/
+    install: pip install swiftype
+    official: true
+    status: deprecated
+    deprecated_in_favor_of: elastic-site-search
+  - language: ruby
+    registry: rubygems
+    name: swiftype
+    url: https://rubygems.org/gems/swiftype
+    install: gem install swiftype
+    official: true
+    status: deprecated
+    deprecated_in_favor_of: elastic-site-search

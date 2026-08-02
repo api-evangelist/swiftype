@@ -1,7 +1,16 @@
 aid: swiftype
 name: Swiftype
-description: Swiftype is a company surfaced as a portfolio company of a16z, dcvc and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Swiftype is a hosted site-search and app-search platform founded in 2012, backed
+  by Andreessen Horowitz (a16z) and DCVC, and acquired by Elastic in 2017 where it
+  now operates as Elastic Site Search. Swiftype gives websites and applications
+  relevance-tuned full-text search, autocomplete, a managed web crawler, document
+  indexing, result ranking/weighting controls, synonyms, and query and click
+  analytics. Developers integrate through the Site Search REST API at
+  https://search-api.swiftype.com/api/v1/ using a private auth_token for full
+  read/write access or a public engine_key for read-only client-side search, with
+  official client libraries for PHP, Python, Node.js, and Ruby published under the
+  Elastic GitHub organization.
 url: https://raw.githubusercontent.com/api-evangelist/swiftype/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,14 +19,101 @@ x-backed-by:
 - dcvc
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
+image: https://swiftype.com/favicon.ico
 tags:
-- Company
-apis: []
+- Search
+- Site Search
+- App Search
+- Full Text Search
+- Autocomplete
+- Web Crawler
+- Analytics
+- Developer Tools
+- Elastic
+apis:
+- aid: swiftype:swiftype-site-search-api
+  name: Swiftype Site Search API
+  humanURL: https://swiftype.com/documentation/site-search/overview
+  baseURL: https://search-api.swiftype.com/api/v1/
+  tags:
+  - Search
+  - Site Search
+  - Autocomplete
+  - Indexing
+  - Analytics
+  description: >-
+    REST API for managing Swiftype search engines, indexing documents, controlling
+    the web crawler and domains, running search and autocomplete queries, and
+    retrieving query/click analytics. Authenticated with a private auth_token or a
+    public read-only engine_key.
+  properties:
+  - url: https://swiftype.com/documentation
+    type: Documentation
+  - url: https://swiftype.com/documentation/site-search/overview
+    type: APIReference
+  - url: authentication/swiftype-authentication.yml
+    type: Authentication
+  - url: conventions/swiftype-conventions.yml
+    type: Conventions
+  - url: rate-limits/swiftype-rate-limits.yml
+    type: RateLimits
+  - url: mcp/swiftype-mcp.yml
+    type: MCPServer
+common:
+- type: DomainSecurity
+  url: security/swiftype-domain-security.yml
+- type: DeveloperPortal
+  url: https://swiftype.com/documentation
+- type: Documentation
+  url: https://swiftype.com/documentation
+- type: APIReference
+  url: https://swiftype.com/documentation/site-search/overview
+- type: Support
+  url: https://discuss.elastic.co/
+- type: GitHubOrganization
+  url: https://github.com/elastic
+- type: StatusPage
+  url: https://www.swiftypestatus.com/
+- type: Authentication
+  url: authentication/swiftype-authentication.yml
+- type: Conventions
+  url: conventions/swiftype-conventions.yml
+- type: RateLimits
+  url: rate-limits/swiftype-rate-limits.yml
+- type: Lifecycle
+  url: lifecycle/swiftype-lifecycle.yml
+- type: Conformance
+  url: conformance/swiftype-conformance.yml
+- type: Packages
+  url: packages/swiftype-packages.yml
+- type: SDKs
+  url: packages/swiftype-packages.yml
+- type: MCPServer
+  url: mcp/swiftype-mcp.yml
+- type: LLMsTxt
+  url: llms/swiftype-llms.txt
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 10
+  pass: local-v1

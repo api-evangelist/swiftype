@@ -1,0 +1,48 @@
+generated: '2026-07-21'
+method: searched
+source: https://swiftype.com/documentation/site-search/overview
+api: Swiftype Site Search API
+base_url: https://search-api.swiftype.com/api/v1/
+authentication:
+  style: api-key
+  detail: >-
+    Private auth_token (full access) or public engine_key (read-only search),
+    passed as a request parameter or via HTTP Basic (credential as username, empty
+    password). See authentication/swiftype-authentication.yml.
+idempotency:
+  supported: false
+  note: >-
+    Swiftype does not document an Idempotency-Key header or idempotent-retry
+    contract. Document indexing is upsert-style by external_id, which is naturally
+    idempotent for create/update, but no request-level idempotency key exists.
+pagination:
+  style: page-number
+  params:
+    page: 1-based page number
+    per_page: results per page (search default 20)
+  response_fields:
+    - info.<document_type>.total_result_count
+    - info.<document_type>.num_pages
+    - info.<document_type>.per_page
+    - info.<document_type>.current_page
+versioning:
+  scheme: uri-path
+  current: v1
+  detail: Version pinned in the URL path (/api/v1/).
+error_envelope:
+  shape: json
+  detail: >-
+    Errors return a JSON body with an "error" string (e.g. {"error": "Rate limit
+    exceeded."}); HTTP status conveys the class (401 auth, 404 not found, 429 rate
+    limit, 5xx server). Not RFC 9457 problem+json.
+rate_limit_signaling:
+  detail: >-
+    HTTP 429 with X-RateLimit-Limit / X-RateLimit-Remaining headers over a rolling
+    hour. See rate-limits/swiftype-rate-limits.yml.
+request_format:
+  content_type: application/json
+  methods: [GET, POST, PUT, DELETE]
+cross_links:
+  authentication: authentication/swiftype-authentication.yml
+  rate_limits: rate-limits/swiftype-rate-limits.yml
+  lifecycle: lifecycle/swiftype-lifecycle.yml

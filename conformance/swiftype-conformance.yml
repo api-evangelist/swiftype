@@ -1,0 +1,39 @@
+generated: '2026-07-21'
+method: derived
+source: https://swiftype.com/documentation/site-search/overview
+notes: >-
+  Derived from the documented Site Search API surface (auth model, error/rate-limit
+  semantics). Swiftype uses static API-key auth with no OAuth/OIDC and a plain JSON
+  error envelope, so most cross-cutting security/interop standards do not apply.
+standards:
+  - id: oauth2
+    conforms: false
+    evidence: API-key only (auth_token / engine_key); no OAuth2 flows.
+  - id: oidc
+    conforms: false
+  - id: http-basic-auth
+    conforms: true
+    evidence: Credentials accepted via HTTP Basic (credential as username, empty password).
+  - id: rfc6585-additional-http-status
+    conforms: true
+    evidence: Returns HTTP 429 Too Many Requests on rate limiting (RFC 6585).
+  - id: rfc9457-problem-details
+    conforms: false
+    evidence: 'Errors return a plain {"error": "..."} JSON body, not application/problem+json.'
+  - id: rest
+    conforms: true
+    evidence: Resource-oriented HTTP API over /api/v1/ with GET/POST/PUT/DELETE.
+  - id: pagination
+    conforms: true
+    evidence: page / per_page query params with num_pages / total_result_count in responses.
+  - id: idempotency
+    conforms: false
+    evidence: No request-level idempotency-key contract documented.
+  - id: fhir
+    conforms: false
+  - id: scim
+    conforms: false
+  - id: odata
+    conforms: false
+  - id: json-api
+    conforms: false

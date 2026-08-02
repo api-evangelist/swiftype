@@ -1,0 +1,29 @@
+generated: '2026-07-21'
+method: searched
+source: https://swiftype.com/documentation
+versioning:
+  scheme: uri-path
+  current: v1
+  docs: https://swiftype.com/documentation/site-search/overview
+status_page: https://www.swiftypestatus.com/
+product_status:
+  state: maintenance
+  detail: >-
+    Swiftype is now Elastic Site Search, operated by Elasticsearch B.V. The product
+    is in a maintenance posture within Elastic's search portfolio. The original
+    "swiftype" client libraries (npm/pypi/rubygems) are officially deprecated in
+    favor of the Elastic-branded "elastic-site-search" clients; the legacy Swiftype
+    App Search documentation is retained but marked legacy.
+  evidence:
+    - PyPI 'swiftype' summary: "A Deprecated Swiftype Site Search API Client for Python. - Use new elastic-site-search package instead."
+    - RubyGems 'swiftype' summary: "Deprecated API client for accessing the Swiftype Site Search API. See new elastic-site-search."
+deprecation:
+  policy_url: null
+  sunset_header: false
+  note: >-
+    No formal RFC 8594 Sunset/Deprecation-header policy is published for the Site
+    Search API itself; deprecation is expressed at the client-library level.
+sla:
+  url: null
+  uptime_target: null
+support: support@swiftype.com

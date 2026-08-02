@@ -1,0 +1,25 @@
+generated: '2026-07-21'
+method: searched
+source: https://swiftype.com/documentation/site-search/rate_limiting
+window: hourly
+description: >-
+  Rate limits are calculated by requests over a rolling one-hour window. Limits
+  are described as "high enough that typical use should rarely be rate limited."
+  Exceeding the limit returns HTTP 429 Too Many Requests (RFC 6585).
+signaling:
+  status_code: 429
+  error_body: '{ "error": "Rate limit exceeded." }'
+  headers:
+    - name: X-RateLimit-Limit
+      description: Requests permitted in the 60-minute window (guidance, not exact).
+    - name: X-RateLimit-Remaining
+      description: Requests remaining in the current 60-minute window (guidance, not exact).
+  guidance: >-
+    Headers are approximate due to network and API influences; back off a couple
+    of hours on a 429 or contact support@swiftype.com for higher limits.
+rate_limits:
+  - name: Site Search API
+    limit_count: null
+    window: 3600
+    unit: requests
+    note: Exact numeric limit not published; enforced per account over a rolling hour.

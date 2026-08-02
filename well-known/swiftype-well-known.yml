@@ -1,0 +1,24 @@
+generated: '2026-07-21'
+method: searched
+source: probe of /.well-known/* on swiftype hosts
+notes: >-
+  No /.well-known/ discovery documents or /llms.txt are published on either the
+  marketing/docs host or the API host. Recorded absence is valid data; no WellKnown
+  or SecurityTxt pointer is emitted because nothing was found.
+hosts:
+  - host: https://swiftype.com
+    documents:
+      - {path: /.well-known/security.txt, status: 404}
+      - {path: /.well-known/openid-configuration, status: 404}
+      - {path: /.well-known/oauth-authorization-server, status: 404}
+      - {path: /.well-known/api-catalog, status: 404}
+      - {path: /.well-known/ai-plugin.json, status: 404}
+      - {path: /llms.txt, status: 404}
+  - host: https://api.swiftype.com
+    documents:
+      - {path: /.well-known/security.txt, status: 404}
+      - {path: /.well-known/openid-configuration, status: 404}
+      - {path: /.well-known/oauth-authorization-server, status: 404}
+      - {path: /.well-known/api-catalog, status: 404}
+      - {path: /.well-known/ai-plugin.json, status: 404}
+      - {path: /llms.txt, status: 404}

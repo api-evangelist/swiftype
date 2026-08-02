@@ -1,0 +1,31 @@
+generated: '2026-07-21'
+method: searched
+source: https://swiftype.com/documentation/site-search/overview
+docs: https://swiftype.com/documentation/site-search/overview
+summary:
+  types: [apiKey, http]
+  api_key_in: [query, header]
+  oauth2_flows: []
+  notes: >-
+    Swiftype Site Search authenticates with static credentials only. There is no
+    OAuth2/OIDC surface, so no scopes artifact applies.
+schemes:
+  - name: auth_token
+    type: apiKey
+    description: >-
+      Private API key (auth_token) granting full read/write access to all API
+      operations for the account. Passed as an auth_token parameter, or via HTTP
+      Basic auth using the key as the username with an empty password.
+    in: query
+    parameter: auth_token
+    also_supports: HTTP Basic (username = auth_token, no password)
+    access: read-write
+  - name: engine_key
+    type: apiKey
+    description: >-
+      Public, read-only engine key used for client-side / public search against a
+      specific engine. Safe to expose in browser code; supports search and
+      autocomplete only.
+    in: query
+    parameter: engine_key
+    access: read-only
