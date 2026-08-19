@@ -2,43 +2,48 @@ generated: '2026-07-21'
 method: derived
 status: candidate
 source: https://swiftype.com/documentation/site-search/overview
-notes: >-
-  No official/hosted Swiftype MCP server exists. This is a CANDIDATE tool list
-  derived from the documented Site Search API surface (no OpenAPI is published, so
-  tools map to documented endpoint groups rather than operationIds). Not published.
+notes: No official/hosted Swiftype MCP server exists. This is a CANDIDATE tool list derived from the documented
+  Site Search API surface (no OpenAPI is published, so tools map to documented endpoint groups rather
+  than operationIds). Not published.
 server:
   name: swiftype-site-search
   transport: http
   url: null
   base_api: https://search-api.swiftype.com/api/v1/
 tools:
-  - name: search
-    description: Search documents across an engine's document types.
-    source_operation: "docs: POST /engines/{engine_id}/search"
-  - name: autocomplete
-    description: Prefix-matching search suggestions for an engine.
-    source_operation: "docs: GET /engines/{engine_id}/autocomplete"
-  - name: list_engines
-    description: List search engines on the account.
-    source_operation: "docs: GET /engines"
-  - name: create_engine
-    description: Create a new search engine.
-    source_operation: "docs: POST /engines"
-  - name: index_document
-    description: Create or update a document by external_id (API-based engines).
-    source_operation: "docs: POST /engines/{engine_id}/document_types/{dt}/documents"
-  - name: bulk_index_documents
-    description: Bulk create/update documents.
-    source_operation: "docs: POST /engines/{engine_id}/document_types/{dt}/documents/bulk_create"
-  - name: delete_document
-    description: Delete a document by external_id.
-    source_operation: "docs: DELETE /engines/{engine_id}/document_types/{dt}/documents/{id}"
-  - name: list_domains
-    description: List crawler domains for a crawler-based engine.
-    source_operation: "docs: GET /engines/{engine_id}/domains"
-  - name: recrawl_domain
-    description: Trigger a recrawl of a crawler domain.
-    source_operation: "docs: PUT /engines/{engine_id}/domains/{id}/recrawl"
-  - name: analytics
-    description: Retrieve query and click analytics for an engine.
-    source_operation: "docs: GET /engines/{engine_id}/analytics/*"
+- name: search
+  description: Search documents across an engine's document types.
+  source_operation: 'docs: POST /engines/{engine_id}/search'
+- name: autocomplete
+  description: Prefix-matching search suggestions for an engine.
+  source_operation: 'docs: GET /engines/{engine_id}/autocomplete'
+- name: list_engines
+  description: List search engines on the account.
+  source_operation: 'docs: GET /engines'
+- name: create_engine
+  description: Create a new search engine.
+  source_operation: 'docs: POST /engines'
+- name: index_document
+  description: Create or update a document by external_id (API-based engines).
+  source_operation: 'docs: POST /engines/{engine_id}/document_types/{dt}/documents'
+- name: bulk_index_documents
+  description: Bulk create/update documents.
+  source_operation: 'docs: POST /engines/{engine_id}/document_types/{dt}/documents/bulk_create'
+- name: delete_document
+  description: Delete a document by external_id.
+  source_operation: 'docs: DELETE /engines/{engine_id}/document_types/{dt}/documents/{id}'
+- name: list_domains
+  description: List crawler domains for a crawler-based engine.
+  source_operation: 'docs: GET /engines/{engine_id}/domains'
+- name: recrawl_domain
+  description: Trigger a recrawl of a crawler domain.
+  source_operation: 'docs: PUT /engines/{engine_id}/domains/{id}/recrawl'
+- name: analytics
+  description: Retrieve query and click analytics for an engine.
+  source_operation: 'docs: GET /engines/{engine_id}/analytics/*'
+deployment:
+  mode: none
+  verified: derived
+  tools: 10
+  checked: '2026-08-12'
+  source: catalog MCP census
