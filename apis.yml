@@ -50,7 +50,7 @@ tags:
 - Search
 - Site Search
 - App Search
-- Full-Text Search
+- Full Text Search
 - Autocomplete
 - Web Crawler
 - Analytics
@@ -96,6 +96,11 @@ apis:
   - url: mcp/swiftype-mcp.yml
     type: MCPServer
 common:
+- type: ParentCompany
+  url: https://apis.io/providers/elastic/
+  name: Elastic
+  x-relationship: acquired
+  x-evidence: "Swiftype is a hosted site-search and app-search platform founded in 2012, backed by Andreessen Horowitz (a16z) and DCVC, and acquired by Elastic in 2017 where it now operates as Elastic Site Search."
 - type: DomainSecurity
   url: security/swiftype-domain-security.yml
 - type: DeveloperPortal
