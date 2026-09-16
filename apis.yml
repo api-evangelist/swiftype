@@ -1,16 +1,13 @@
 aid: swiftype
 name: Swiftype
-description: >-
-  Swiftype is a hosted site-search and app-search platform founded in 2012, backed
-  by Andreessen Horowitz (a16z) and DCVC, and acquired by Elastic in 2017 where it
-  now operates as Elastic Site Search. Swiftype gives websites and applications
-  relevance-tuned full-text search, autocomplete, a managed web crawler, document
-  indexing, result ranking/weighting controls, synonyms, and query and click
-  analytics. Developers integrate through the Site Search REST API at
-  https://search-api.swiftype.com/api/v1/ using a private auth_token for full
-  read/write access or a public engine_key for read-only client-side search, with
-  official client libraries for PHP, Python, Node.js, and Ruby published under the
-  Elastic GitHub organization.
+description: Swiftype is a hosted site-search and app-search platform founded in 2012, backed by Andreessen
+  Horowitz (a16z) and DCVC, and acquired by Elastic in 2017 where it now operates as Elastic Site Search.
+  Swiftype gives websites and applications relevance-tuned full-text search, autocomplete, a managed web
+  crawler, document indexing, result ranking/weighting controls, synonyms, and query and click analytics.
+  Developers integrate through the Site Search REST API at https://search-api.swiftype.com/api/v1/ using
+  a private auth_token for full read/write access or a public engine_key for read-only client-side search,
+  with official client libraries for PHP, Python, Node.js, and Ruby published under the Elastic GitHub
+  organization.
 url: https://raw.githubusercontent.com/api-evangelist/swiftype/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -46,7 +43,7 @@ accessModel:
   method: derived
 specificationVersion: '0.23'
 created: '2026-07-17'
-modified: '2026-07-21'
+modified: '2026-09-16'
 image: https://swiftype.com/favicon.ico
 tags:
 - Search
@@ -79,11 +76,9 @@ apis:
   - Autocomplete
   - Indexing
   - Analytics
-  description: >-
-    REST API for managing Swiftype search engines, indexing documents, controlling
-    the web crawler and domains, running search and autocomplete queries, and
-    retrieving query/click analytics. Authenticated with a private auth_token or a
-    public read-only engine_key.
+  description: REST API for managing Swiftype search engines, indexing documents, controlling the web
+    crawler and domains, running search and autocomplete queries, and retrieving query/click analytics.
+    Authenticated with a private auth_token or a public read-only engine_key.
   properties:
   - url: https://swiftype.com/documentation
     type: Documentation
@@ -98,11 +93,14 @@ apis:
   - url: mcp/swiftype-mcp.yml
     type: MCPServer
 common:
+- type: Website
+  url: https://swiftype.com
 - type: ParentCompany
   url: https://apis.io/providers/elastic/
   name: Elastic
   x-relationship: acquired
-  x-evidence: "Swiftype is a hosted site-search and app-search platform founded in 2012, backed by Andreessen Horowitz (a16z) and DCVC, and acquired by Elastic in 2017 where it now operates as Elastic Site Search."
+  x-evidence: Swiftype is a hosted site-search and app-search platform founded in 2012, backed by Andreessen
+    Horowitz (a16z) and DCVC, and acquired by Elastic in 2017 where it now operates as Elastic Site Search.
 - type: DomainSecurity
   url: security/swiftype-domain-security.yml
 - type: DeveloperPortal
@@ -133,7 +131,10 @@ common:
   url: packages/swiftype-packages.yml
 - type: X-MCPServerCandidate
   url: mcp/swiftype-mcp.yml
-  note: 'Renamed from MCPServer 2026-09-03 (roadmap#247): the manifest self-describes as status: candidate — a tool list derived from the published API contracts, not an existing server. The scorer already read the manifest and reported mcp_server correctly; the MCPServer type was crediting the artifact-type surfaces with a server that does not exist.'
+  note: 'Renamed from MCPServer 2026-09-03 (roadmap#247): the manifest self-describes as status: candidate
+    — a tool list derived from the published API contracts, not an existing server. The scorer already
+    read the manifest and reported mcp_server correctly; the MCPServer type was crediting the artifact-type
+    surfaces with a server that does not exist.'
 - type: LLMsTxt
   url: llms/swiftype-llms.txt
 maintainers:
