@@ -64,6 +64,102 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Swiftype is a company surfaced as a portfolio company of a16z, dcvc and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+Swiftype is a hosted site-search and app-search platform founded in 2012, backed by Andreessen Horowitz (a16z) and DCVC, and acquired by Elastic in 2017 where it now operates as Elastic Site Search. Swiftype gives websites and applications relevance-tuned full-text search, autocomplete, a managed web crawler, document indexing, result ranking/weighting controls, synonyms, and query and click analytics. Developers integrate through the Site Search REST API at https://search-api.swiftype.com/api/v1/ using a private auth_token for full read/write access or a public engine_key for read-only client-side search, with official client libraries for PHP, Python, Node.js, and Ruby published under the Elastic GitHub organization.
 
-Backed by: a16z, dcvc
+**Areas:** Search · Site Search · App Search · Full-Text Search · Autocomplete · Web Crawler · Analytics · Developer Tools · Elastic
+
+## Swiftype on APIs.io
+
+Everything profiled for Swiftype is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/swiftype/](https://apis.io/providers/swiftype/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [Swiftype Site Search API](https://apis.io/apis/swiftype/swiftype-site-search-api/) — REST API for managing Swiftype search engines, indexing documents, controlling the web crawler and domains, running search and autocomplete queries, and…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### MCP servers (1)
+
+Model Context Protocol servers that expose the API to agents.
+
+- [swiftype-site-search](https://apis.io/servers/swiftype/swiftype-site-search/)
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Swiftype Authentication](https://apis.io/security/swiftype/swiftype-authentication/)
+- [Swiftype Domain Security](https://apis.io/security/swiftype/swiftype-domain-security/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Swiftype Rate Limits](https://apis.io/rate-limits/swiftype/swiftype-rate-limits/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://swiftype.com)
+- [Documentation](https://swiftype.com/documentation)
+- [API reference](https://swiftype.com/documentation/site-search/overview)
+- [Support](https://discuss.elastic.co/)
+- [Blog](https://swiftype.com/press)
+- [GitHub](https://github.com/elastic)
+- [Status](https://www.swiftypestatus.com/)
+
+## API Evangelist rating
+
+**Kin Score 21.0** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 73.2 |
+| Contract quality | 0.0 |
+| Contract governance | 4.5 |
+| Operational transparency | 18.4 |
+| Developer ergonomics | 52.4 |
+| Access clarity | 0.0 |
+
+**Agent readiness 5.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 16.7** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/swiftype/](https://apis.io/providers/swiftype/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Swiftype: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/swiftype/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
